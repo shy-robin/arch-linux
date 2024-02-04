@@ -200,7 +200,7 @@ locale.gen：字符集，locale.conf：语言环境
 
 ### 系统配置
 
-#### 更细启动项
+#### 更新启动项
 
 重启进入到 Arch Linux 启动页面，可以发现 grub 的启动选项里没有 Windows 这一选项，需要进入到系统后更新一下 grub 配置。
 
@@ -211,6 +211,22 @@ locale.gen：字符集，locale.conf：语言环境
 安装中文字体，否则会乱码（需要先连接网络）：`sudo pacman -S adobe-source-han-sans-cn-fonts`
 
 在设置里切换语言，然后重启，可以发现在启动项里已经有了 Windows 选项，进入到 Arch Linux，可以发现系统界面已经是中文了。
+
+注意，此时可能会有问题：kde 部分地方没有汉化
+
+> 可参考：https://wiki.archlinuxcn.org/wiki/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%9C%AC%E5%9C%B0%E5%8C%96 进行本地化。
+
+如果参考 wiki 还没解决问题，可参考以下方法：
+
+1. 编辑 .xprofile 文件：`vim ~/.config/.xprofile`
+2. 添加：
+
+```
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+```
+
+3. logout，进入 wayland 或者 x11，检查是否生效。
 
 #### 配置安装源
 
