@@ -22,3 +22,11 @@ caps_lock: tap -> esc, hold -> Ctrl
 sudo systemctl enable udevmon
 sudo systemctl start udevmon
 ```
+
+## 科学上网
+
+安装 v2ray-desktop: `sudo pacman -S v2ray-desktop`
+
+设置：socks 端口：10808，http 端口：10809
+
+选择全局模式，设置系统代理（SOCKS)
