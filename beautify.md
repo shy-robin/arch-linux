@@ -183,7 +183,9 @@ cd applet-window-buttons/
 
 ## 安装 latte dock 并导入 latte 布局
 
-`sudo pacman -S latte-dock`
+`sudo pacman -S latte-dock-git`
+
+_注意，不要安装 latte-dock，这个包有些问题，比如最大化窗口栏时，dock 会遮盖窗口_
 
 搜索 'autostart'， 添加应用程序 -> latte -> 应用
 
