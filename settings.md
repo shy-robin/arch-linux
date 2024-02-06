@@ -30,3 +30,7 @@ sudo systemctl start udevmon
 设置：socks 端口：10808，http 端口：10809
 
 选择全局模式，设置系统代理（SOCKS)
+
+## 字体
+
+下载 Sauce Code Pro Nerd Font 并安装，在 konsole 中使用该字体（neovim 会用到一些其中的图标）
