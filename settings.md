@@ -40,3 +40,9 @@ sudo systemctl start udevmon
 如果遇到声音问题，请检查声音驱动。
 
 参考：https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/
+
+## neovim 与系统共享剪贴板
+
+`sudo pacman -S xsel`
+
+> https://askubuntu.com/questions/1486871/how-can-i-copy-and-paste-outside-of-neovim
