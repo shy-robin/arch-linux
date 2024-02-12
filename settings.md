@@ -34,3 +34,9 @@ sudo systemctl start udevmon
 ## 字体
 
 下载 Sauce Code Pro Nerd Font 并安装，在 konsole 中使用该字体（neovim 会用到一些其中的图标）
+
+## 声音
+
+如果遇到声音问题，请检查声音驱动。
+
+参考：https://blog.icehoney.me/posts/2014-06-05-archlinux-sound-setting/
